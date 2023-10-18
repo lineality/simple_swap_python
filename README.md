@@ -8,19 +8,19 @@ def swap_two(input_string, item_1, item_2):
     """
     Swap two items in a string. Tada!
 
-    or change the first item, 2nd item is optional.
+    or change only the first item, the 2nd item is optional.
 
     protection from swap-collisions is included
     """
 
     original_string = input_string
 
-    # validity sanity check
+    # validity sanity check (item_2 is optional, only item 1 is needed)
     if item_1 not in input_string:
         print(f"item to match not in string -> {item_1} vs. {input_string}")
         sys.exit()
 
-    use_this_placeholder = ""
+    use_this_placeholder = ';;;<<<'
 
     """all possible ascii placeholders, and more:
     while there is a risk of item 1 or two coliding with the placeholder
@@ -98,5 +98,6 @@ def swap_two(input_string, item_1, item_2):
     print(message)
 
     return output_swapped_string
+
 
 ```
