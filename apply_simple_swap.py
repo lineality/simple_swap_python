@@ -1,4 +1,4 @@
-# "Easy things are hard."
+# "Easy things are hard." -> flip 1 and 2 in "1+2=3"
 
 import hashlib
 import random
